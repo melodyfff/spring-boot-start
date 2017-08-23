@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -19,12 +20,15 @@ public class StartApplicationTests {
 
     @Test
     @Rollback
+    @Transactional
     public void findByName() throws Exception {
-//		userMapper.insert("AAA", 20);
         User u = new User();
         try {
-           u = userMapper.findByName("AAA");
-        }catch (Exception e){
+		userMapper.insert("AAA", 20);
+            u = userMapper.findByName("AAA");
+            System.out.println(u);
+            throw new Exception();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
