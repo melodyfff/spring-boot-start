@@ -24,10 +24,10 @@ public class StartApplicationTests {
     public void findByName() throws Exception {
         User u = new User();
         try {
-		userMapper.insert("AAA", 20);
+//		userMapper.insert("AAA", 20);
             u = userMapper.findByName("AAA");
             System.out.println(u);
-            throw new Exception();
+//            throw new Exception();
         } catch (Exception e) {
             e.printStackTrace();
         }
