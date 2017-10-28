@@ -21,7 +21,14 @@ public class test {
     public void test() throws Exception {
         String data = "<data> error1 </data>";
 
-        errorProcessorUtil.check(data);
+
+//        errorProcessorUtil.check(data);
+
+        Pe pe = new Pe();
+        Pe pe1 = new Pe();
+
+        System.out.println(pe.no=2);
+        System.out.println(pe1.getNo());
     }
 
 

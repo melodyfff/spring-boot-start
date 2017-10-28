@@ -1,20 +1,17 @@
 package com.xinchen.springboot.start.web;
 
-import com.xinchen.springboot.start.core.result.ErrorInfoInterface;
 import com.xinchen.springboot.start.core.result.GlobalErrorInfoException;
 import com.xinchen.springboot.start.service.TestService;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.Action;
-import java.util.UUID;
 
 @RestController
+@RequestMapping("api")
 public class TestController {
 
     @Autowired
