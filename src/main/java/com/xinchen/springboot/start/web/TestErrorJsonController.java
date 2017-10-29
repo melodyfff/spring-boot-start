@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ErrorJsonController {
+public class TestErrorJsonController {
     @RequestMapping(value = "/api/city")
     public ResultBody findOneCity(@RequestParam("cityName") String cityName) throws GlobalErrorInfoException {
         // 入参为空
