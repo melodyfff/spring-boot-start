@@ -1,4 +1,4 @@
-package com.xinchen.springboot.start.util;
+package com.xinchen.springboot.start.core.util;
 
 
 import java.util.Arrays;
