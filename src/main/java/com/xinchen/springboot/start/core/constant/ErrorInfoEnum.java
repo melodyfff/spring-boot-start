@@ -1,9 +1,11 @@
-package com.xinchen.springboot.start.core.result;
+package com.xinchen.springboot.start.core.constant;
+
+import com.xinchen.springboot.start.core.result.ErrorInfoInterface;
 
 /**
  * 应用系统级别的错误码
  */
-public enum  GlobalErrorInfoEnum implements ErrorInfoInterface{
+public enum ErrorInfoEnum implements ErrorInfoInterface {
     SUCCESS("0", "success"),
     NOT_FOUND("-1", "service not found");
 
@@ -11,7 +13,7 @@ public enum  GlobalErrorInfoEnum implements ErrorInfoInterface{
 
     private String message;
 
-    GlobalErrorInfoEnum(String code, String message) {
+    ErrorInfoEnum(String code, String message) {
         this.code = code;
         this.message = message;
     }

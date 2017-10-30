@@ -1,5 +1,6 @@
 package com.xinchen.springboot.start.core.result;
 
+import com.xinchen.springboot.start.core.constant.ErrorInfoEnum;
 import lombok.Data;
 
 /**
@@ -22,8 +23,8 @@ public class ResultBody {
     }
 
     public ResultBody(Object result) {
-        this.code = GlobalErrorInfoEnum.SUCCESS.getCode();
-        this.message = GlobalErrorInfoEnum.SUCCESS.getMessage();
+        this.code = ErrorInfoEnum.SUCCESS.getCode();
+        this.message = ErrorInfoEnum.SUCCESS.getMessage();
         this.result = result;
     }
 

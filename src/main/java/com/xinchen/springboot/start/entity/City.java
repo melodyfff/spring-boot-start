@@ -1,4 +1,4 @@
-package com.xinchen.springboot.start.web;
+package com.xinchen.springboot.start.entity;
 
 import lombok.Data;
 

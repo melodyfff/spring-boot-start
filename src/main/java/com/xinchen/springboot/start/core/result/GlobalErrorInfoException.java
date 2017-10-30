@@ -5,6 +5,9 @@ package com.xinchen.springboot.start.core.result;
  * 统一错误码异常
  */
 public class GlobalErrorInfoException extends Exception{
+    /**
+     * 异常信息接口
+     */
     private ErrorInfoInterface errorInfo;
 
     public GlobalErrorInfoException (ErrorInfoInterface errorInfo) {

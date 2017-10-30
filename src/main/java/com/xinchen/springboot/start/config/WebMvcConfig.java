@@ -15,7 +15,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(tokenVerifyInterceptor()).addPathPatterns("/api/city");
+        registry.addInterceptor(tokenVerifyInterceptor()).addPathPatterns("/api/city/*");
         super.addInterceptors(registry);
     }
 }
