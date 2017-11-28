@@ -1,5 +1,7 @@
 server:
   port: 8089
+  session:
+    timeout: 1
 
 spring:
   datasource:
