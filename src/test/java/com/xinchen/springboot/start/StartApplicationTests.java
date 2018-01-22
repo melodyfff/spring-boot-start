@@ -11,6 +11,8 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class StartApplicationTests {
@@ -19,12 +21,12 @@ public class StartApplicationTests {
     private UserMapper userMapper;
 
     @Test
-    @Rollback
-    @Transactional
+//    @Rollback
+//    @Transactional
     public void findByName() throws Exception {
         User u = new User();
         try {
-//		userMapper.insert("AAA", 20);
+		userMapper.insert("AAA", 20,new Date());
             u = userMapper.findByName("AAA");
             System.out.println(u);
 //            throw new Exception();
