@@ -22,8 +22,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                // disable csrf
+                .csrf().disable()
+                // X-Frame-Options:sameOrigin
+                .headers().frameOptions().sameOrigin()
+                .and()
                 .authorizeRequests()
-                .antMatchers("/", "/home").permitAll()
+                .antMatchers("/", "/home","/h2-console/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().permitAll()

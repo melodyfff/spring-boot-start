@@ -5,3 +5,22 @@ spring:
     user:
       name: admin
       password: admin
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:app
+    data-username: sa
+    password:
+  # enable H2 Web Console , default path: /h2-console
+  h2:
+    console:
+      enabled: true
+  jpa:
+    # target database
+    database: h2
+    show-sql: true
+    open-in-view: true
+    database-platform:
+    hibernate:
+      # (none, validate, update, create, create-drop) default is 'none'
+      ddl-auto: update
