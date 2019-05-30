@@ -7,9 +7,9 @@
         <artifactId>start</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>context</artifactId>
+    <artifactId>web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>context</name>
+    <name>web</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 

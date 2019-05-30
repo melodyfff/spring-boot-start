@@ -26,11 +26,10 @@
 	</properties>
 
 	<modules>
-		<module>api</module>
 		<module>common</module>
 		<module>service</module>
 		<module>service-support</module>
-		<module>context</module>
+		<module>web</module>
 	</modules>
 
 
