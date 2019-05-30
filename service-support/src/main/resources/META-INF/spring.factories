@@ -1,0 +1,2 @@
+# autoconfig security
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.xinchen.start.service.support.sercurity.WebSecurityConfig
