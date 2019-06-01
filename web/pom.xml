@@ -54,7 +54,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.xinchen.start.context.ContextApplication</mainClass>
+                    <mainClass>com.xinchen.start.web.ContextApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
